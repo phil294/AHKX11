@@ -939,8 +939,7 @@
             <a id="TutorialHelp.htm__Install" href="#TutorialHelp.htm__Install" class="pcalibre3 pcalibre1 pcalibre calibre5 pcalibre2">#</a> Installation
           </p>
           <ol class="calibre19 x11">
-            <li class="calibre11">Download the program from <a href="https://github.com/phil294/ahk_x11/releases/latest/download/ahk_x11.zip">here</a></li>
-            <li class="calibre11">Extract it</li>
+            <li class="calibre11">Download the latest program in portable AppImage format from <a href="https://github.com/phil294/ahk_x11/releases/latest">here</a>.</li>
             <li class="calibre11">Run it, for example by double clicking. If this does not work, then you also need to mark it as executable. This usually works via right click / file properties.</li>
             <li class="calibre11">Now the installer should open. Click install and your setup is complete.</li>
             <li class="calibre11">Please be aware that so far, there is *no* auto-update function. New features are being added all the time right now, so you should probably repeat the above steps then and again. The documentation (this very site) will always be up to date.</li>
@@ -10019,8 +10018,9 @@ return
           <p class="calibre8"><strong class="calibre14">Related</strong></p>
           <p class="calibre8"><a href="#PixelSearch.htm" class="pcalibre3 pcalibre1 pcalibre calibre5 pcalibre2">PixelSearch</a>, <a href="#CoordMode.htm" class="pcalibre3 pcalibre1 pcalibre calibre5 pcalibre2">CoordMode</a>, <a href="#MouseGetPos.htm" class="pcalibre3 pcalibre1 pcalibre calibre5 pcalibre2">MouseGetPos</a></p>
           <p class="calibre8"> </p>
-          <p class="calibre8"><strong class="calibre14">Example</strong></p>
+          <p class="calibre8"><strong class="calibre14">Examples</strong></p>
           <p class="calibre8">^!z::<br class="calibre12" /> MouseGetPos, MouseX, MouseY<br class="calibre12" /> PixelGetColor, color, %MouseX%, %MouseY%<br class="calibre12" /> MsgBox, The color at the current cursor position is %color%.<br class="calibre12" /> return</p>
+          <p class="calibre8">PixelGetColor, color, 1000, 500<br />StringMid, red, color, 5, 2<br />StringMid, green, color, 3, 2<br />StringMid, blue, color, 0, 2<br />MsgBox, color is %red% %green% %blue%</p>
         </div>
       </div>
       <div class="calibreMain">
@@ -12448,7 +12448,6 @@ if pos &gt;= 0
           <p class="calibre8"> </p>
           <p class="calibre8"><strong class="calibre14">Example</strong></p>
           <p class="calibre8">Source = Hello this is a test. <br class="calibre12" /> StringMid, the_word_this, Source, 7, 4 <br class="calibre12" />
-          </p>
         </div>
       </div>
       <div class="calibreMain">
